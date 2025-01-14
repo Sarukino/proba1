@@ -111,6 +111,8 @@ By leveraging the power of a data warehouse, the e-commerce company can transfor
 
 #### The components of a data warehouse
 
+![Enterprise Data Warehouse Components](warehouse.jpg "Overview of Enterprise Data Warehousing")
+
 A typical data warehouse consists of the following key components:
 
 1. Data Sources:
@@ -645,7 +647,7 @@ There are several loading methods, including:
    - This method is suitable for scenarios where the data needs to be analyzed or reported in real-time.
    - Real-time loading requires a robust and efficient data integration and loading infrastructure to handle the continuous data flow.
    - It is especially beneficial in industries such as finance, telecommunications, and online retail, where up-to-the-second data is crucial for decision-making and staying competitive.
-   
+
 ![Real-time Data Processing Flow](Data-flow-for-real-time-IoT-data-processing-and-a-decision-making-generic-pipeline.jpg "Real-time Data Processing Pipeline")
 
 Here's an example of loading transformed data into a data warehouse using SQL:
