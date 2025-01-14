@@ -523,6 +523,8 @@ The topics covered in this chapter include:
 
 #### Data Extraction from Source Systems
 
+![ETL Pipeline](etlpipe.jpg "Overview of the ETL Pipeline")
+
 The initial step in the data loading process is extracting data from source systems. These source systems encompass a variety of data repositories, including databases, spreadsheets, flat files, and other data sources. The extraction process is vital for gathering the necessary data for further analysis and reporting.
 
 Several extraction methods are employed to facilitate this process:
@@ -563,6 +565,8 @@ WHERE last_modified_date > (SELECT MAX(last_modified_date) FROM target_table);
 In this example, the full extraction query retrieves all records from the source table. The incremental extraction query retrieves records that have been modified since a specific date. The delta extraction query retrieves records that have been modified since the last extraction by comparing the maximum last_modified_date in the target table.
 
 #### Data Transformation
+
+![Data Aggregation Process](Data-Aggregation-Process-Illustration.jpg "Overview of the Data Aggregation Process")
 
 After extracting data from source systems, the next crucial step is data transformation. This process is essential to ensure that the data meets the requirements of the data warehouse and is ready for analysis and reporting. Data transformation involves various operations, including cleaning, filtering, aggregating, and integrating the extracted data.
 
@@ -641,6 +645,8 @@ There are several loading methods, including:
    - This method is suitable for scenarios where the data needs to be analyzed or reported in real-time.
    - Real-time loading requires a robust and efficient data integration and loading infrastructure to handle the continuous data flow.
    - It is especially beneficial in industries such as finance, telecommunications, and online retail, where up-to-the-second data is crucial for decision-making and staying competitive.
+   
+![Real-time Data Processing Flow](Data-flow-for-real-time-IoT-data-processing-and-a-decision-making-generic-pipeline.jpg "Real-time Data Processing Pipeline")
 
 Here's an example of loading transformed data into a data warehouse using SQL:
 
@@ -668,6 +674,8 @@ In this example, a target table named `sales_fact` is created in the data wareho
 The transformed data is joined with the dimension tables (`product_dim`, `region_dim`, and `date_dim`) based on the respective attributes to retrieve the corresponding surrogate keys. The surrogate keys are used to establish the relationships between the fact table and the dimension tables in the data warehouse.
 
 #### Data Quality Considerations
+
+![Data Cleaning Process](Process-for-data-cleaning-in-regression-models-DC-RM.jpg "Steps for Data Cleaning")
 
 Data quality is a critical aspect of the data loading process. Poor data quality can lead to inaccurate analysis, unreliable reports, and incorrect business decisions. It is essential to ensure data quality throughout the entire data loading process, from extraction to loading.
 
@@ -993,6 +1001,8 @@ The topics covered in this chapter include:
 ### Content of the Lesson
 
 #### OLAP Cubes
+
+![OLAP Cube Example](OLAP-cube-example.jpg "Visualization of an OLAP Cube")
 
 OLAP (Online Analytical Processing) cubes are multidimensional structures that allow for efficient data analysis. They form the core of most OLAP systems and provide a way to organize and summarize large amounts of data into a format that is easy to understand and navigate.
 
